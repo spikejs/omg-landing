@@ -283,8 +283,12 @@ main .page-header {
 /* COMPONENTS */
 .omp-page .phone-with-screen {
     position: relative;
-    background-image: url(../img/frontal_phone.png);
+    background-color: transparent;
     background-size: contain;
+    background-repeat: no-repeat;
+}
+html.no-webp .phone-with-screen {
+    background-image: url(../img/frontal_phone.png);
 }
 html.webp .omp-page .phone-with-screen {
     background-image: url(../img/frontal_phone.webp);
@@ -444,7 +448,7 @@ and (orientation : portrait) {
 
 
 .omp-page-1_5-video {
-    background: transparent url(../img/Jollac_camera1_placeholder.jpg) 50% 50% no-repeat;
+    background: transparent 50% 50% no-repeat;
     background-size: cover;
 
     position: fixed;
@@ -453,6 +457,9 @@ and (orientation : portrait) {
     left: 0;
     right: 0;
     bottom: 0;
+}
+html.no-webp .omp-page-1_5-video {
+    background-image: url(../img/Jollac_camera1_placeholder.jpg)
 }
 html.webp .omp-page-1_5-video {
     background-image: url(../img/Jollac_camera1_placeholder.webp);
@@ -562,31 +569,31 @@ html.webp .omp-page-1_5-video {
     transition: top 1s ease-out 0s;
 }
 
-.omp-page-2__imgs__phone-1 .omp-page-2__imgs__phone__screen {
+html.no-webp .omp-page-2__imgs__phone-1 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen11.jpg);
 }
 html.webp .omp-page-2__imgs__phone-1 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen11.webp);
 }
-.omp-page-2__imgs__phone-2 .omp-page-2__imgs__phone__screen {
+html.no-webp .omp-page-2__imgs__phone-2 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen12.jpg);
 }
 html.webp .omp-page-2__imgs__phone-2 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen12.webp);
 }
-.omp-page-2__imgs__phone-3 .omp-page-2__imgs__phone__screen {
+html.no-webp .omp-page-2__imgs__phone-3 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen13.jpg);
 }
 html.webp .omp-page-2__imgs__phone-3 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen13.webp);
 }
-.omp-page-2__imgs__phone-4 .omp-page-2__imgs__phone__screen {
+html.no-webp .omp-page-2__imgs__phone-4 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen14.jpg);
 }
 html.webp .omp-page-2__imgs__phone-4 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen14.webp);
 }
-.omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
+html.no-webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
     background-image: url(../img/screen15.jpg);
 }
 html.webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
@@ -852,39 +859,39 @@ html.webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
     opacity: 0;
 }
 
-.omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-1 {
+html.no-webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen6.jpg);
 }
 html.webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen6.webp);
 }
-.omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-2 {
+html.no-webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-2 {
     background-image: url(../img/screen6-red.jpg);
 }
 html.webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-2 {
     background-image: url(../img/screen6-red.webp);
 }
 
-.omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-1 {
+html.no-webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen7.jpg);
 }
 html.webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen7.webp);
 }
-.omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-2 {
+html.no-webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-2 {
     background-image: url(../img/screen7-red.jpg);
 }
 html.webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-2 {
     background-image: url(../img/screen7-red.webp);
 }
 
-.omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-1 {
+html.no-webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen1.jpg);
 }
 html.webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-1 {
     background-image: url(../img/screen1.webp);
 }
-.omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-2 {
+html.no-webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-2 {
     background-image: url(../img/screen1-red.jpg);
 }
 html.webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-2 {
