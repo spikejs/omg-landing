@@ -50,6 +50,16 @@
     line-height: 1.3;
 }
 
+/* iOS video play btn */
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button,
+canvas::-webkit-media-controls-play-button,
+canvas::-webkit-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
+}
+
 /* page content */
 
 body {
