@@ -269,7 +269,9 @@ const application = {
 
                     if ( type === 'canvid' ) {
                         if ( this.__canvidControl && !this._isSameVideo(videoDescription) ) {
-                            this.__canvidControl.destroy();
+                            if ( typeof this.__canvidControl.destroy === 'function' ) {
+                                this.__canvidControl.destroy();
+                            }
                             this.__canvidControl = void 0;
                         }
                         if ( !this.__canvidControl ) {
