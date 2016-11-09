@@ -1519,6 +1519,12 @@ exports.default = {
 },{}],14:[function(require,module,exports){
 'use strict';
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+//import CanvasVideoPlayer from './libs/canvas-video-player';
+
+//import VideoScroller from 'video-scroller';
+
+
 require('babel-polyfill');
 
 require('./libs/polyfills');
@@ -1553,13 +1559,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //import scopeSelector from './libs/scopeSelector';
 
-//import VideoScroller from 'video-scroller';
 var mobileDetect = new _mobileDetect2.default(window.navigator.userAgent);
-//import CanvasVideoPlayer from './libs/canvas-video-player';
-
 var isMobile = mobileDetect.mobile() ? true : false;
 
-var imageExt = window.Modernizr && window.Modernizr.webp.valueOf() ? 'webp' : 'jpg';
+function getBooleanValue(value) {
+    if (value === false || value === null || value === void 0 || value === 0) {
+        return false;
+    }
+    if (value === true) {
+        return value;
+    }
+    if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
+        return !!value.valueOf();
+    }
+    return !!value;
+}
+
+var imageExt = window.Modernizr && getBooleanValue(window.Modernizr.webp) ? 'webp' : 'jpg';
 
 var application = {
     start: function start() {
@@ -1624,6 +1640,10 @@ var application = {
                     }
                 },
                 _onCanvidFrame: function _onCanvidFrame() {
+                    if (!this.__canvidControl.getCurrentFrame) {
+                        return;
+                    }
+
                     var currentFrame = this.__canvidControl.getCurrentFrame();
 
                     if (this.__canvidControl.isReverseNow) {
@@ -1850,7 +1870,9 @@ var application = {
 
                     if (type === 'canvid') {
                         if (this.__canvidControl && !this._isSameVideo(videoDescription)) {
-                            this.__canvidControl.destroy();
+                            if (typeof this.__canvidControl.destroy === 'function') {
+                                this.__canvidControl.destroy();
+                            }
                             this.__canvidControl = void 0;
                         }
                         if (!this.__canvidControl) {

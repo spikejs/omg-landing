@@ -18,7 +18,20 @@ import {Sections} from './Sections.js';
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile() ? true : false;
 
-const imageExt = (window.Modernizr && window.Modernizr.webp.valueOf()) ? 'webp' : 'jpg';
+function getBooleanValue(value) {
+    if ( value === false || value === null || value === void 0 || value === 0 ) {
+        return false;
+    }
+    if ( value === true ) {
+        return value;
+    }
+    if ( typeof value === 'object' ) {
+        return !!value.valueOf();
+    }
+    return !!value;
+}
+
+const imageExt = (window.Modernizr && getBooleanValue(window.Modernizr.webp)) ? 'webp' : 'jpg';
 
 const application = {
     start() {
@@ -82,6 +95,10 @@ const application = {
                     }
                 },
                 _onCanvidFrame() {
+                    if ( !this.__canvidControl.getCurrentFrame ) {
+                        return;
+                    }
+
                     let currentFrame = this.__canvidControl.getCurrentFrame();
 
                     if ( this.__canvidControl.isReverseNow ) {
