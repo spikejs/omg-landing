@@ -469,9 +469,13 @@ html.webp .omp-page-1_5-video {
     min-height: 0;/* FULLSIZE */
 }
 
-html.elementsFromPoint .omp-page-2 {
-    top: 200px;
-    z-index: 99999;
+/*html.elementsFromPoint .omp-page-2 {*/
+    /*top: 200px;*/
+    /*z-index: 99999;*/
+/*}*/
+
+.omp-page-2 {
+    margin-bottom: -4px; /* Небольшой фикс, а то между .omp-page-4 и .omp-page-5 образовывалась 1px "щель" */
 }
 
 .omp-page-2__imgs {
@@ -731,7 +735,7 @@ html.webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
 /*}*/
 
 .omp-page-3 {
-
+    margin-bottom: -4px;/* Небольшой фикс, а то между .omp-page-4 и .omp-page-5 образовывалась 1px "щель" */
 }
 .omp-page-3 .omp-page__extra-bg {
 }
