@@ -30,28 +30,28 @@ const application = {
                 videoByDimensions: {
                     "video":{
                         "portrait": {
-                            "1920": {src: '/media/Jollac_camera1_hb.mp4', width: 1920, height: 1080},
-                            "1280": {src: '/media/Jollac_camera1_hb_HD.mp4', width: 1280, height: 720},
-                            "720": {src: '/media/Jollac_camera1_hb_portrait_hd.mp4', width: 720, height: 1234},
-                            "*": {src: '/media/Jollac_camera1_hb_portrait_960.mp4', width: 540, height: 926},
+                            "1920": {src: 'media/Jollac_camera1_hb.mp4', width: 1920, height: 1080},
+                            "1280": {src: 'media/Jollac_camera1_hb_HD.mp4', width: 1280, height: 720},
+                            "720": {src: 'media/Jollac_camera1_hb_portrait_hd.mp4', width: 720, height: 1234},
+                            "*": {src: 'media/Jollac_camera1_hb_portrait_960.mp4', width: 540, height: 926},
                         },
                         "landscape": {
-                            "1920": {src: '/media/Jollac_camera1_hb.mp4', width: 1920, height: 1080},
-                            "1280": {src: '/media/Jollac_camera1_hb_HD.mp4', width: 1280, height: 720},
-                            "*": {src: '/media/Jollac_camera1_hb_960.mp4', width: 960, height: 540},
+                            "1920": {src: 'media/Jollac_camera1_hb.mp4', width: 1920, height: 1080},
+                            "1280": {src: 'media/Jollac_camera1_hb_HD.mp4', width: 1280, height: 720},
+                            "*": {src: 'media/Jollac_camera1_hb_960.mp4', width: 960, height: 540},
                         },
                     },
                     "canvid": {
                         "portrait": {
-                            "1920": {src: `/media/Jollac_camera1_hb.${imageExt}`, width: 1920, height: 1080, frames: 32, cols: 6, loops: 0, fps: 30},
-                            "1280": {src: `/media/Jollac_camera1_hb_HD.${imageExt}`, width: 1280, height: 720, frames: 32, cols: 6, loops: 0, fps: 30},
-                            "720": {src: `/media/Jollac_camera1_hb_portrait_hd.${imageExt}`, width: 720, height: 1234, frames: 32, cols: 6, loops: 0, fps: 30},
-                            "*": {src: `/media/Jollac_camera1_hb_portrait_960.${imageExt}`, width: 540, height: 926, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "1920": {src: `media/Jollac_camera1_hb.${imageExt}`, width: 1920, height: 1080, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "1280": {src: `media/Jollac_camera1_hb_HD.${imageExt}`, width: 1280, height: 720, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "720": {src: `media/Jollac_camera1_hb_portrait_hd.${imageExt}`, width: 720, height: 1234, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "*": {src: `media/Jollac_camera1_hb_portrait_960.${imageExt}`, width: 540, height: 926, frames: 32, cols: 6, loops: 0, fps: 30},
                         },
                         "landscape": {
-                            "1920": {src: `/media/Jollac_camera1_hb.${imageExt}`, width: 1920, height: 1080, frames: 32, cols: 6, loops: 0, fps: 30},
-                            "1280": {src: `/media/Jollac_camera1_hb_HD.${imageExt}`, width: 1280, height: 720, frames: 32, cols: 6, loops: 0, fps: 30},
-                            "*": {src: `/media/Jollac_camera1_hb_960.${imageExt}`, width: 960, height: 540, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "1920": {src: `media/Jollac_camera1_hb.${imageExt}`, width: 1920, height: 1080, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "1280": {src: `media/Jollac_camera1_hb_HD.${imageExt}`, width: 1280, height: 720, frames: 32, cols: 6, loops: 0, fps: 30},
+                            "*": {src: `media/Jollac_camera1_hb_960.${imageExt}`, width: 960, height: 540, frames: 32, cols: 6, loops: 0, fps: 30},
                         },
                     },
                 },
