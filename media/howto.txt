@@ -1,0 +1,3 @@
+ffmpeg -i Jollac_camera1_hb_HD.mp4 -vf scale=1280:-1 -r 15 frames/%04d.png
+montage -border 0 -geometry 1280x -tile 6x -quality 95% frames/*.png Jollac_camera1_hb_HD.jpg
+cwebp Jollac_camera1_hb_HD.jpg -m 6 -q 85 -o Jollac_camera1_hb_HD.webp

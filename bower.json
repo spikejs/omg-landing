@@ -1,0 +1,23 @@
+{
+  "name": "OMP",
+  "authors": [
+    "Егор <termi_uc@inbox.ru>"
+  ],
+  "description": "OMP website",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
