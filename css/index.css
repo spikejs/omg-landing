@@ -415,13 +415,28 @@ and (orientation : portrait) {
     right: 0;
     bottom: 0;
 
+}
+
+html.no-cssgradients .omp-page_gray .omp-page__extra-bg-pre {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2027', endColorstr='#121e31',GradientType=0 ); /* IE6-9 */
+}
+
+html.no-webp .omp-page_gray .omp-page__extra-bg-pre {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a2027+0,121e31+100 */
     background: rgb(26,32,39) url(../img/dither_background.png); /* Old browsers */
     background: url(../img/dither_background.png), -moz-linear-gradient(top, rgba(26,32,39,1) 0%, rgba(18,30,49,1) 100%); /* FF3.6-15 */
     background: url(../img/dither_background.png), -webkit-linear-gradient(top, rgba(26,32,39,1) 0%,rgba(18,30,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: url(../img/dither_background.png), linear-gradient(to bottom, rgba(26,32,39,1) 0%,rgba(18,30,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2027', endColorstr='#121e31',GradientType=0 ); /* IE6-9 */
 }
+
+html.webp .omp-page_gray .omp-page__extra-bg-pre {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a2027+0,121e31+100 */
+    background: rgb(26,32,39) url(../img/dither_background.webp); /* Old browsers */
+    background: url(../img/dither_background.webp), -moz-linear-gradient(top, rgba(26,32,39,1) 0%, rgba(18,30,49,1) 100%); /* FF3.6-15 */
+    background: url(../img/dither_background.webp), -webkit-linear-gradient(top, rgba(26,32,39,1) 0%,rgba(18,30,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: url(../img/dither_background.webp), linear-gradient(to bottom, rgba(26,32,39,1) 0%,rgba(18,30,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 .omp-page_gray .omp-page__extra-bg {
     position: absolute;
     z-index: 990;
