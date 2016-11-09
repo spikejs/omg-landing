@@ -461,6 +461,9 @@ function randomString(prefix, postfix) {
                         curFrame = -1;
                         _opts = void 0;
                         ctx = void 0;
+                        // ADDED BY TERMI:: START
+                        opts.__destroyed = true;
+                        // ADDED BY TERMI:: END
                     };
                     // ADDED BY TERMI: END
 
@@ -470,6 +473,11 @@ function randomString(prefix, postfix) {
                     }
 
                     function frame() {
+                        // ADDED BY TERMI:: START
+                        if (opts.__destroyed || control.__destroyed) {
+                            return;
+                        }
+                        // ADDED BY TERMI:: END
                         if (!wait) {
                             drawFrame(curFrame);
                             // ADDED BY TERMI: START
@@ -1872,6 +1880,8 @@ var application = {
                         if (this.__canvidControl && !this._isSameVideo(videoDescription)) {
                             if (typeof this.__canvidControl.destroy === 'function') {
                                 this.__canvidControl.destroy();
+                            } else {
+                                this.__canvidControl.__destroyed = true;
                             }
                             this.__canvidControl = void 0;
                         }

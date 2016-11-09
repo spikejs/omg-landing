@@ -289,6 +289,9 @@ const application = {
                             if ( typeof this.__canvidControl.destroy === 'function' ) {
                                 this.__canvidControl.destroy();
                             }
+                            else {
+                                this.__canvidControl.__destroyed = true;
+                            }
                             this.__canvidControl = void 0;
                         }
                         if ( !this.__canvidControl ) {
