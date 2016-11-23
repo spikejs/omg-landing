@@ -208,11 +208,17 @@ main .page-header {
     background-color: #000;
 }
 
+.omp-page_header__logo,
 .omp-page_header__logo:hover,
 .omp-page_header__logo:link,
-.omp-page_header__logo:visited {
+.omp-page_header__logo:visited,
+.omp-page_header__logo a,
+.omp-page_header__logo a:hover,
+.omp-page_header__logo a:link,
+.omp-page_header__logo a:visited {
     text-decoration: none;
     color: #000;
+    outline: none;
 }
 
 .omp-page_header__logo__img {
