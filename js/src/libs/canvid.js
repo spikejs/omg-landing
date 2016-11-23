@@ -125,7 +125,7 @@
                         _opts = void 0;
                         ctx = void 0;
                         // ADDED BY TERMI:: START
-                        opts.__destroyed = true;
+                        this.__destroyed = true;
                         // ADDED BY TERMI:: END
                     };
                     // ADDED BY TERMI: END
@@ -137,7 +137,8 @@
 
                     function frame() {
                         // ADDED BY TERMI:: START
-                        if ( opts.__destroyed || control.__destroyed ) {
+                        if ( control.__destroyed ) {
+                            playing = false;
                             return;
                         }
                         // ADDED BY TERMI:: END
@@ -172,7 +173,7 @@
                         var fx = Math.floor(f % opts.cols) * frameWidth,
                             fy = Math.floor(f / opts.cols) * frameHeight;
 
-                        ctx.clearRect(0, 0, _opts.width, _opts.height); // clear frame
+                        //ctx.clearRect(0, 0, _opts.width, _opts.height); // clear frame
                         ctx.drawImage(img, fx, fy, frameWidth, frameHeight, 0, 0, _opts.width, _opts.height);
                     }
 
@@ -207,6 +208,7 @@
             }
 
             function checkCallback() {
+                //console.log('checkCallback ', this.src);
                 imagesToLoad--;
                 if (imagesToLoad === 0) {
                     callback(null, images);

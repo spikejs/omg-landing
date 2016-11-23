@@ -36,7 +36,11 @@ const imageExt = (window.Modernizr && getBooleanValue(window.Modernizr.webp)) ? 
 const application = {
     start() {
         console.log('start App', new Date());
-        console.log('current browser is', isMobile ? 'mobile' : 'desktop');
+
+        let deviceType = isMobile ? 'mobile' : 'desktop';
+        document.documentElement.classList.add(deviceType);
+
+        console.log('current browser is', deviceType);
 
         let sections = this.sections = new Sections('.omp-page_content', document, {sectionSelector: '.omp-page'}, {
             '.omp-page-1_5-video': {
