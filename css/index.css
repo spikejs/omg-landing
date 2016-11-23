@@ -84,16 +84,33 @@ main {
 
 /* Default values */
 main h1 {
-    font-size: 1.7em;
+    font-size: 2.2em;
 }
 main h2 {
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 main h3 {
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 main h4 {
     font-size: .9em;
+}
+
+/* =Phones & Tablets
+--------------------------------------------------------------------------- */
+@media only screen and (max-width : 1224px) {
+    main h1 {
+        font-size: 1.7em;
+    }
+    main h2 {
+        font-size: 1.4em;
+    }
+    main h3 {
+        font-size: 1.2em;
+    }
+    main h4 {
+        font-size: 1.0em;
+    }
 }
 
 main .page-header {
@@ -106,16 +123,16 @@ main .page-header {
 --------------------------------------------------------------------------- */
 @media only screen and (min-width : 1224px) {
     main h1 {
-        font-size: 54px;
+        /*font-size: 54px;*/
     }
     main h2 {
-        font-size: 40px;
+        /*font-size: 40px;*/
     }
     main h3 {
-        font-size: 33px;
+        /*font-size: 33px;*/
     }
     main h4 {
-        font-size: 20px;
+        /*font-size: 20px;*/
     }
 }
 @media only screen and (min-width: 768px) {
@@ -164,7 +181,6 @@ main .page-header {
 .omp-page_header {
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1em;
-    padding-top: 12px;
 }
 .omp-page_header__inner {
     display: inline-block;
@@ -183,6 +199,9 @@ main .page-header {
 .omp-page_header__logo {
     height: 4.6em;
     line-height: 4.6em;
+
+    border-top: 12px solid #000;
+    box-sizing: content-box;
 
     text-align: center;
 
@@ -252,6 +271,7 @@ main .page-header {
 	letter-spacing:0.07em;
 
     margin-top: 16px;
+    line-height: 1.4em;
 }
 
 .omp-page-data {
@@ -466,7 +486,7 @@ html.webp .omp-page_gray .omp-page__extra-bg-pre {
     background-size: cover;
 
     position: fixed;
-    z-index: 99;
+    z-index: 80;
     top: 0;
     left: 0;
     right: 0;
@@ -771,11 +791,11 @@ html.webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
 .omp-page-3 .omp-page__extra-bg {
 }
 .omp-page__extra-bg-1 {
-    background: transparent url(../img/slide3_bg.jpg) no-repeat center;
+    background: transparent url(../img/slide3_bg/slide3_bg.jpg) no-repeat center;
     background-size: cover;
 }
 .omp-page__extra-bg-2 {
-    background: transparent url(../img/slide3_bg-red.jpg) no-repeat center;
+    background: transparent url(../img/slide3_bg-green/slide3_bg-green.jpg) no-repeat center;
     background-size: cover;
 
     -webkit-transition: opacity 1s ease-out 0s;
@@ -874,42 +894,42 @@ html.webp .omp-page-2__imgs__phone-5 .omp-page-2__imgs__phone__screen {
 }
 
 html.no-webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen6.jpg);
+    background-image: url(../img/screen16-1.jpg);
 }
 html.webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen6.webp);
+    background-image: url(../img/screen16-1.webp);
 }
 html.no-webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen6-red.jpg);
+    background-image: url(../img/screen16-2.jpg);
 }
 html.webp .omp-page-3__imgs__phone-1 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen6-red.webp);
+    background-image: url(../img/screen16-2.webp);
 }
 
 html.no-webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen7.jpg);
+    background-image: url(../img/screen17-1.jpg);
 }
 html.webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen7.webp);
+    background-image: url(../img/screen17-1.webp);
 }
 html.no-webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen7-red.jpg);
+    background-image: url(../img/screen17-2.jpg);
 }
 html.webp .omp-page-3__imgs__phone-2 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen7-red.webp);
+    background-image: url(../img/screen17-2.webp);
 }
 
 html.no-webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen1.jpg);
+    background-image: url(../img/screen15-1.jpg);
 }
 html.webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-1 {
-    background-image: url(../img/screen1.webp);
+    background-image: url(../img/screen15-1.webp);
 }
 html.no-webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen1-red.jpg);
+    background-image: url(../img/screen15-2.jpg);
 }
 html.webp .omp-page-3__imgs__phone-3 .omp-page__imgs__phone__screen-2 {
-    background-image: url(../img/screen1-red.webp);
+    background-image: url(../img/screen15-2.webp);
 }
 
 .omp-page-3__imgs__phone {
@@ -1155,6 +1175,27 @@ html.webpanimation  .omp-page-4__imgs__phone-3 .omp-page__imgs__phone__screen {
     background: black;
 }
 
+.omp-page-5 .omp-page-data {
+    padding: 0 20px;
+}
+
+.omp-page-5 table tbody th {
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.omp-page-5 table {
+    width: 100%;
+}
+
+.omp-page-5 table tbody .th_inner.th_inner-left {
+    width: 80%;
+}
+
+.omp-page-5 table tbody .th_inner.th_inner-right {
+    white-space: nowrap;
+}
+
 .omp-page-5 .w-header {
     background: url(../img/slide1_bg.jpg);
     background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(17,20,23,1) 95%),url(../img/slide1_bg.jpg); /* ff3.6+ */
@@ -1181,6 +1222,19 @@ html.webpanimation  .omp-page-4__imgs__phone-3 .omp-page__imgs__phone__screen {
     .omp-page-5 .left {
         padding-left: 5px;
     }
+}
+
+/* !sic Mobile placeholder */
+.omp-page-last {
+    background: #000;
+    z-index: 99;
+
+    min-height: 0;
+    max-height: 1px;
+    margin-top: -10px;
+}
+.omp-page-last .omp-page-data {
+    height: 100px;
 }
 
 

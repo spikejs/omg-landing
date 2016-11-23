@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                 options: {
                     banner: '/* test */',
                     browserifyOptions: {
-                        debug: false,
+                        debug: true,
                     },
                     transform: [
                         ["babelify", {
